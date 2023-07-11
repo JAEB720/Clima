@@ -19,10 +19,11 @@ const App = () => {
       {isLoading ? (
         <Loader />
       ) : (
-        <WeatherApp />
-    
+        <>
+          <WeatherApp />
+          <p className='Author'>🦊 Hecho por <a href="https://github.com/JAEB720" target='_blank'>JAEB720</a></p>
+        </>
       )}
-      <p className='Author'>🦊 Hecho por <a href="https://github.com/JAEB720" target='_blank'>JAEB720</a></p> 
     </div>
   );
 };
