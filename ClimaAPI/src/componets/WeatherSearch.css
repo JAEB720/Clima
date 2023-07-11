@@ -1,0 +1,14 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  body{
+   
+    background: linear-gradient(rgba(5, 7, 12, 0.10), rgba(5, 7, 12, 0.10)),
+    url(/fondo1.webp) no-repeat ;
+  
+  }
+  
