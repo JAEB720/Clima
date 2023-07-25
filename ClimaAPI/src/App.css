@@ -164,7 +164,9 @@ p.Author{
 
 @media (max-width: 768px) {
 
+  
   body{
+    width: 100%;
     font-size: 1em;
     background: linear-gradient(rgba(5, 7, 12, 0.10), rgba(5, 7, 12, 0.10)),
     url(/fondo3.jpg) no-repeat center center fixed ;
