@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import '../App.css';
 
 const WeatherApp = () => {
   const [weatherData, setWeatherData] = useState(null);
@@ -79,7 +80,7 @@ const WeatherData = ({ weatherData, isCelsius, toggleTemperature }) => {
       <p className='Five'>
         Temperature: {isCelsius ? `${temperatureC.toFixed(0)} °C` : `${temperatureF.toFixed(0)} °F`}
       </p>
-      <button onClick={toggleTemperature} className='Cambio'>
+      <button onClick={toggleTemperature}>
         change to ({isCelsius ? 'Fahrenheit' : 'Celsius'})
       </button>
     </div>

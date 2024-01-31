@@ -1,12 +1,15 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
- 
-  padding: 2rem;
-  text-align: center;
+  /* max-width: 1280px; */
   
+  margin: 0 auto;
+height: 100vh;
+ 
+  padding: 0;
+  text-align: center;
+
  
 }
+
 
 body{
  
@@ -15,16 +18,7 @@ body{
   font-size: 0.8em;
 }
 
-input{
-  margin-bottom: 0.5rem;
-  border-radius: 8%;
-  /* background-color: rgb(255, 255, 255); */
-  border-bottom: solid 1px #2461a6;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.50);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background: linear-gradient(rgba(5, 7, 12, 0.1), rgba(5, 7, 12, 0.50)) ;
 
-}
 
 .container{
   /* background-color: #2461a6; */
@@ -36,10 +30,10 @@ h1{
   /* background-color: rgb(174, 12, 12); */
   /* border: solid 1px #0077ff; */
  margin: 1rem;
-  /* font-family: Arial, Helvetica, sans-serif; */
-  font-style: italic;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* font-style: italic; */
   
-  color: rgba(0, 0, 0, 0.80);   
+  color: rgba(236, 248, 255, 0.8);   
 }
 h2{
   /* background-color: rgb(174, 12, 12); */
@@ -55,8 +49,8 @@ p{
   width: 50%;
   height: 2rem;
   border-radius: 2%;
-  border-bottom: solid 1px #2461a6;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  /* border-bottom: solid 1px #8ea624; */
+  box-shadow: 0px 1px 1px rgba(41, 159, 255, 0.4);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-style:italic;
   /* background: linear-gradient(rgba(5, 7, 12, 0.15), rgba(5, 7, 12, 0.15)) ; */
@@ -66,49 +60,57 @@ p{
   position: relative;
   padding-left: 3rem;
   margin-left: 1rem;
+  box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.4);
+  border-radius: 0px 0px 10px 10px;
 }
 .Two{
   background-color: #2461a6;
   margin-left: 2rem;
+  box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.4);
+  border-radius: 0px 0px 10px 10px;
 }
 .Three{
   background-color: #2461a6;
   margin-left: 3rem;
+  box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.4);
+  border-radius: 0px 0px 10px 10px;
 }
 .Four{
   background-color: #2461a6;
   margin-left: 4rem;
+  box-shadow: 0px 1px 4px rgba(255, 255, 255, 0.4);
+  border-radius: 10px 10px 0px 0px;
 }
 .Five{
   background-color: #2461a6;
   margin-left: 15.7rem;
+  box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.4);
+  border-radius: 0px 0px 10px 10px;
+  
 }
 
-.Busqueda{
-  width:100%;
-  height: 3rem;
-  border-bottom: solid 2px #2461a6;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-style:oblique;
-  background: linear-gradient(rgba(5, 7, 12, 0.30), rgba(5, 7, 12, 0.30)) ;
-}
+
 
 .Datos{
+  position: relative;
+  /* overflow: hidden; */
+
   border-radius: 5%;
-  padding: auto;
-  background-color: rgb(77, 255, 0);
+  /* padding: auto; */
+  /* background-color: rgb(77, 255, 0); */
   background: linear-gradient(rgba(5, 7, 12, 0.40), rgba(5, 7, 12, 0.10)),
   url(/estacin5.png) center ;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+width: 30rem;
 
-
+  
 
   -moz-border-radius: 0 50% / 0 100%;
   -webkit-border-radius: 0 50% / 0 100%;
   border-radius: 0 50% / 0 100%;
   
   border: 1px solid #2461a6;
+  
 
 
 }
@@ -124,38 +126,60 @@ p{
   
 }
 
-.Cambio{
-  /* background-color: rgb(77, 255, 0); */
+button {
+
   position: absolute;
- 
   width: 12rem;
   height: 2.8rem;
-  font-size: 0.8em;
-  background: linear-gradient(rgba(5, 7, 12, 0.30), rgba(5, 7, 12, 0.75));
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
- 
+  font-size: .8em;
+  background: linear-gradient(rgba(5,7,12,.3),rgba(5,7,12,.75));
+  background: linear-gradient(rgba(5, 7, 12, 0.51), rgba(5, 7, 12, 0.40));
+
+  margin: 0.5rem;
+  border-radius: 10px;
+  border: none;
+
+   color: rgb(222, 182, 255);
+  box-shadow: #92c7f3 3px 3px 7px;
+}
+button:hover {
+  color: #afebff;
+  background: #2196f3;
+  box-shadow:  2px 2px 10px rgb(0, 103, 193);
+  transition: 0.2s;
 }
 
-p.Author{
 
+p.Author{
+position: absolute;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-style:oblique;
-  width: 30%;
+  /* font-style:oblique; */
+  width: 9rem;
   height: 1rem;
   border-radius: 5%;
-  margin: 0;
+  margin-top: -34rem;
+  
   font-size: 0.7em;
-  background: linear-gradient(rgba(5, 7, 12, 0.30), rgba(5, 7, 12, 0.75));
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-  text-decoration: none;
+  /* background: linear-gradient(rgba(5, 7, 12, 0.30), rgba(5, 7, 12, 0.75)); */
+  /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); */
+  /* text-decoration: none; */
   font-weight: 700;
   color:#fcda68 ;
-  position: relative;
- margin: 8.5rem auto;
+  /* position: relative; */
+  box-shadow: none;
  
+
  
   
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -164,165 +188,76 @@ p.Author{
 
 @media (max-width: 768px) {
 
+
   
   body{
-    width: 100%;
-    font-size: 1em;
+
+  
+    
+    /* overflow: hidden; */
+    
+    /* font-size: 1em; */
     background: linear-gradient(rgba(5, 7, 12, 0.10), rgba(5, 7, 12, 0.10)),
     url(/fondo3.jpg) no-repeat center center fixed ;
-  position: absolute;
-  font-size: 0.8em;
+    background-size: cover;
+  /* position: absolute; */
+  /* font-size: 0.8em; */
   }
-
-.container{
-  /* background-color: #2461a6; */
-  /* overflow: hidden;} */
-  height: 40rem;
-}
-
-input{
-  margin-bottom: 0.5rem;
-  border-radius: 8%;
-  /* background-color: rgb(255, 255, 255); */
-  border-bottom: solid 1px #2461a6;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.50);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background: linear-gradient(rgba(5, 7, 12, 0.1), rgba(5, 7, 12, 0.50)) ;
-
-}
-
-
-  h1{
-    /* background-color: rgb(174, 12, 12); */
-    /* border: solid 1px #0077ff; */
-    margin: 0.2rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-    color: rgba(0, 0, 0, 0.80);   
-  }
-  h2{
-    /* background-color: rgb(174, 12, 12); */
-    /* border: solid 1px #0077ff; */
-    margin: 0.2rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-    color: rgba(0, 0, 0, 0.75);   
-  }
-
-  p{
-    /* background-color: teal; */
-    
-   width: 60%;
-   height: 2rem;
-   margin-bottom: 0.3rem;
-   margin-top: 0.2rem;
-  
-    border-radius: 5%;
-    border-bottom: solid 1px #2461a6;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style:italic;
-    background: linear-gradient(rgba(5, 7, 12, 0.15), rgba(5, 7, 12, 0.15)) ;
-  }
-
-  .One{
-    /* background-color: #2461a6; */
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(rgba(5, 7, 12, 0.10), rgba(5, 7, 12, 0.30));
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.10);
-   
-  }
-  .Two{
-    /* background-color: #2461a6; */
-    width: 100%;
-    margin: 0.5rem auto;
-    background: linear-gradient(rgba(5, 7, 12, 0.10), rgba(5, 7, 12, 0.30));
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.10);
-   
-  }
-  .Three{
-    /* background-color: #480000; */
-    width: 100%;
-    margin: 0.5rem auto;
-    background: linear-gradient(rgba(5, 7, 12, 0.10), rgba(5, 7, 12, 0.30));
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.10);
-  }
-  .Four{
-    width: 100%;
-    margin: 0.5rem auto;
-    background: linear-gradient(rgba(5, 7, 12, 0.10), rgba(5, 7, 12, 0.30));
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.10);
-  }
+ 
   .Five{
-    /* background-color: #67a624; */
-    width: 100%;
-    margin: 0.5rem auto;
-    background: linear-gradient(rgba(5, 7, 12, 0.10), rgba(5, 7, 12, 0.30));
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.90);
-  }
-
-  .Busqueda{
-    border-bottom: solid 2px #2461a6;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style:oblique;
-    background: linear-gradient(rgba(5, 7, 12, 0.30), rgba(5, 7, 12, 0.30)) ;
+    background-color: #2461a6;
+    margin-left: 14.7rem;
+    box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.4);
+    border-radius: 0px 0px 10px 10px;
+    
   }
   
+
   .Datos{
-    position:relative;
-    overflow: hidden;
+    position: relative;
+    /* overflow: hidden; */
+  
     border-radius: 5%;
-    
+    /* padding: auto; */
     /* background-color: rgb(77, 255, 0); */
     background: linear-gradient(rgba(5, 7, 12, 0.40), rgba(5, 7, 12, 0.10)),
-    url(/dom.png) center center;
+    url(/estacin5.png) center ;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-  }
+  width: 30rem;
   
-  .img1{
-    /* background-color: rgb(255, 255, 255); */
-    background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.60));
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-    border-radius: 5%;
-    width: 7rem;
-    height: 6rem;
     
+  margin:1rem;
+    -moz-border-radius: 0 50% / 0 100%;
+    -webkit-border-radius: 0 50% / 0 100%;
+    border-radius: 0 50% / 0 100%;
     
-  }
+    border: 1px solid #2461a6;
+    
   
-  .Cambio{
-    /* background-color: rgb(77, 255, 0); */
-    position: relative;
+  
+  }
+
+  button {
+
+    position: absolute;
     width: 12rem;
     height: 2.8rem;
-    font-size: 0.8em;
-    background: linear-gradient(rgba(5, 7, 12, 0.30), rgba(5, 7, 12, 0.75));
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-    
-   
+    font-size: 1em;
+   margin-left: -5rem;
+   margin-top: 2rem;
+    background: linear-gradient(rgba(0, 72, 255, 0.30),rgba(0, 26, 99, 0.75));
+    /* background: linear-gradient(rgba(5, 7, 12, 0.51), rgba(5, 7, 12, 0.40)); */
+  
+ 
+     color: rgb(193, 231, 253);
+    box-shadow: #92c7f3 3px 3px 7px;
   }
-
-  p.Author{
-
-    width: 100%;
-    height: 1rem;
-    border-radius: 5%;
-    margin: 0;
-    font-size: 0.7em;
-    background: linear-gradient(rgba(5, 7, 12, 0.30), rgba(5, 7, 12, 0.75));
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-    text-decoration: none;
-    font-weight: 700;
-    color:#fcda68 ;
-    position: relative;
-   margin: -2rem auto;
-   
-   
-    
+  button:hover {
+    color: #afebff;
+    background: #2196f3;
+    box-shadow:  2px 2px 10px rgb(0, 103, 193);
+    transition: 0.2s;
   }
-
-
+  
+  
 }
